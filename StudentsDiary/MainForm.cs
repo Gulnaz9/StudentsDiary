@@ -26,8 +26,16 @@ namespace StudentsDiary
 
         private void TimingBtn_Click(object sender, EventArgs e)
         { 
+            this.Close();
             TimingForm form = new TimingForm();
             form.Show();
+        }
+
+        private void DiaryBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MarkForm markForm = new MarkForm();
+            markForm.Show();
         }
     }
 }

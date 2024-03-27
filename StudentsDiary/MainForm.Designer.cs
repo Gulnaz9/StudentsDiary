@@ -81,6 +81,7 @@
             this.DiaryBtn.Size = new System.Drawing.Size(118, 100);
             this.DiaryBtn.TabIndex = 2;
             this.DiaryBtn.UseVisualStyleBackColor = false;
+            this.DiaryBtn.Click += new System.EventHandler(this.DiaryBtn_Click);
             // 
             // GradBtn
             // 
