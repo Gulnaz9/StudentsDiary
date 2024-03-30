@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.AccountBtn = new System.Windows.Forms.Button();
             this.TimingBtn = new System.Windows.Forms.Button();
             this.DiaryBtn = new System.Windows.Forms.Button();
             this.GradBtn = new System.Windows.Forms.Button();
+            this.ExitToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // AccountBtn
@@ -94,6 +96,7 @@
             this.GradBtn.Name = "GradBtn";
             this.GradBtn.Size = new System.Drawing.Size(108, 98);
             this.GradBtn.TabIndex = 4;
+            this.ExitToolTip.SetToolTip(this.GradBtn, "Выйти");
             this.GradBtn.UseVisualStyleBackColor = false;
             this.GradBtn.Click += new System.EventHandler(this.GradBtn_Click);
             // 
@@ -120,5 +123,6 @@
         private System.Windows.Forms.Button TimingBtn;
         private System.Windows.Forms.Button DiaryBtn;
         private System.Windows.Forms.Button GradBtn;
+        private System.Windows.Forms.ToolTip ExitToolTip;
     }
 }

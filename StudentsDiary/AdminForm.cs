@@ -50,5 +50,12 @@ namespace StudentsDiary
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void LoginPicBox_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm form = new LoginForm();
+            form.Show();
+        }
     }
 }

@@ -201,7 +201,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Баг-репорт.docx" />
     <None Include="расписание 1.csproj" />
+    <None Include="техническое задание %281%29 %281%29.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

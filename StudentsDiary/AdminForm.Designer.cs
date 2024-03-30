@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.AdminLogTextBox = new System.Windows.Forms.TextBox();
             this.AdminPassTextBox = new System.Windows.Forms.TextBox();
             this.AdminEnterBtn = new System.Windows.Forms.Button();
             this.LoginPicBox = new System.Windows.Forms.PictureBox();
             this.AdminLbl = new System.Windows.Forms.Label();
+            this.BackToolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LoginPicBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +92,8 @@
             this.LoginPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LoginPicBox.TabIndex = 3;
             this.LoginPicBox.TabStop = false;
+            this.BackToolTip.SetToolTip(this.LoginPicBox, "Выйти");
+            this.LoginPicBox.Click += new System.EventHandler(this.LoginPicBox_Click);
             // 
             // AdminLbl
             // 
@@ -132,5 +136,6 @@
         private System.Windows.Forms.Button AdminEnterBtn;
         private System.Windows.Forms.PictureBox LoginPicBox;
         private System.Windows.Forms.Label AdminLbl;
+        private System.Windows.Forms.ToolTip BackToolTip;
     }
 }
